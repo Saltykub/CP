@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+
+# ignore all .cph folders
+**/*.cph/
+*.bin
