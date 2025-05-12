@@ -1,0 +1,1 @@
+{"name":"Local: wordcombi","url":"c:\\Posn com\\cses\\string\\wordcombi.cpp","tests":[{"id":1727014769029,"input":"ababc\n4\nab\nabab\nc\ncb","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Posn com\\cses\\string\\wordcombi.cpp","group":"local","local":true}

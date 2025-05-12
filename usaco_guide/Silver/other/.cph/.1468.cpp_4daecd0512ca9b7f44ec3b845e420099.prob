@@ -1,0 +1,1 @@
+{"name":"Local: 1468","url":"c:\\Posn com\\usaco_guide\\Silver\\other\\1468.cpp","tests":[{"id":1736923733563,"input":"3\n7 2 3 6\n1 4\n7 2 3 6\n5 1\n7 2 3 6\n4 4\n","output":"2\n1\n1\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Posn com\\usaco_guide\\Silver\\other\\1468.cpp","group":"local","local":true}

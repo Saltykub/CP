@@ -1,0 +1,1 @@
+{"name":"Local: stones","url":"c:\\Posn com\\Atcoder\\Dp contest\\stones.cpp","tests":[{"id":1729564493937,"input":"2 7\n2 3","output":""},{"id":1729564884197,"input":"2 4\n2 3\n","output":"First"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Posn com\\Atcoder\\Dp contest\\stones.cpp","group":"local","local":true}

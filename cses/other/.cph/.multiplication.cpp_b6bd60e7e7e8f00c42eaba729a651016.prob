@@ -1,0 +1,1 @@
+{"name":"Local: multiplication","url":"c:\\Posn com\\cses\\other\\multiplication.cpp","tests":[{"id":1709981444378,"input":"3","output":"3"},{"id":1709981903626,"input":"5","output":"8"},{"id":1709982549251,"input":"7","output":"12"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Posn com\\cses\\other\\multiplication.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: subarraysum","url":"c:\\Posn com\\cses\\range query\\subarraysum.cpp","tests":[{"id":1704125740687,"input":"5 3\n1 2 -3 5 -1\n2 6\n3 1\n2 -2","output":"9\n13\n6"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Posn com\\cses\\range query\\subarraysum.cpp","group":"local","local":true}

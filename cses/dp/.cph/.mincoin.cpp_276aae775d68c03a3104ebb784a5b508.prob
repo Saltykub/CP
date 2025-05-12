@@ -1,0 +1,1 @@
+{"name":"Local: mincoin","url":"c:\\Posn com\\cses\\dp\\mincoin.cpp","tests":[{"id":1718765158839,"input":"3 11\n1 5 7","output":"3"},{"id":1718765365758,"input":"\n1 1\n1000000","output":"-1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Posn com\\cses\\dp\\mincoin.cpp","group":"local","local":true}

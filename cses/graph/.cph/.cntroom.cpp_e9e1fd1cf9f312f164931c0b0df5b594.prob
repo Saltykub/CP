@@ -1,0 +1,1 @@
+{"name":"Local: cntroom","url":"c:\\Posn com\\cses\\graph\\cntroom.cpp","tests":[{"id":1704521988125,"input":"5 8\n########\n#..#...#\n####.#.#\n#..#...#\n########","output":"3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Posn com\\cses\\graph\\cntroom.cpp","group":"local","local":true}

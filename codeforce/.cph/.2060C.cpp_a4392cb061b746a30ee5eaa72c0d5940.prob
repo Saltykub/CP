@@ -1,0 +1,1 @@
+{"name":"Local: 2060C","url":"c:\\Posn com\\codeforce\\2060C.cpp","tests":[{"id":1738138040043,"input":"4\n4 4\n1 2 3 2\n8 15\n1 2 3 4 5 6 7 8\n6 1\n1 1 1 1 1 1\n16 9\n3 1 4 1 5 9 2 6 5 3 5 8 9 7 9 3\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Posn com\\codeforce\\2060C.cpp","group":"local","local":true}

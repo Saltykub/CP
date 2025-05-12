@@ -1,0 +1,1 @@
+{"name":"Local: missingnum","url":"c:\\Posn com\\cses\\missingnum.cpp","tests":[{"id":1683348840754,"input":"5\n3 2 5 1 7","output":"5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Posn com\\cses\\missingnum.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: 1902C","url":"c:\\Posn com\\codeforce\\1902C.cpp","tests":[{"id":1701665439807,"input":"3\n3\n1 2 3\n5\n1 -19 17 -3 -15\n1\n10","output":"6\n27\n1"},{"id":1701665574818,"input":"1\n3\n1 2 3","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Posn com\\codeforce\\1902C.cpp","group":"local","local":true}

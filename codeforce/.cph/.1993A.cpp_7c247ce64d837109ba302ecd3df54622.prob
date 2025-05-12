@@ -1,0 +1,1 @@
+{"name":"Local: 1993A","url":"c:\\Posn com\\codeforce\\1993A.cpp","tests":[{"id":1723012890207,"input":"6\n1\nABCD\n2\nAAAAAAAA\n2\nAAAABBBB\n2\n????????\n3\nABCABCABCABC\n5\nACADC??ACAC?DCAABC?C","output":"4\n2\n4\n0\n9\n13"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Posn com\\codeforce\\1993A.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: gcd_on_bb","url":"c:\\Posn com\\usaco_guide\\Silver\\Prefix sum\\gcd_on_bb.cpp","tests":[{"id":1734007515576,"input":"3\n7 6 8","output":"2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Posn com\\usaco_guide\\Silver\\Prefix sum\\gcd_on_bb.cpp","group":"local","local":true}

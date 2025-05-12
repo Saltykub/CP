@@ -1,0 +1,1 @@
+{"name":"Local: 2060A","url":"c:\\Posn com\\codeforce\\2060A.cpp","tests":[{"id":1737997892548,"input":"6\n1 1 3 5\n1 3 2 1\n8 10 28 100\n100 1 100 1\n1 100 1 100\n100 100 100 100\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Posn com\\codeforce\\2060A.cpp","group":"local","local":true}

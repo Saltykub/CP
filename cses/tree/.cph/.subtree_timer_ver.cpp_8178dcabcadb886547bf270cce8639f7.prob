@@ -1,0 +1,1 @@
+{"name":"Local: subtree_timer_ver","url":"c:\\Posn com\\cses\\tree\\subtree_timer_ver.cpp","tests":[{"id":1706145084838,"input":"5 3\n4 2 5 2 1\n1 2\n1 3\n3 4\n3 5\n2 3\n1 5 3\n2 3","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Posn com\\cses\\tree\\subtree_timer_ver.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: 1873A","url":"c:\\Posn com\\codeforce\\1873A.cpp","tests":[{"id":1695307069661,"input":"6\nabc\nacb\nbac\nbca\ncab\ncba","output":"YES\nYES\nYES\nNO\nNO\nYES"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Posn com\\codeforce\\1873A.cpp","group":"local","local":true}
