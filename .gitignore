@@ -32,5 +32,8 @@
 *.app
 
 # ignore all .cph folders
-**/*.cph/
+TOI/
+oj/
+.cph/
+.vscode/
 *.bin

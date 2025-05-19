@@ -6,21 +6,17 @@
 #define pb push_back
 using namespace std;
 const int N = 2e5+10;
-bool CASE = true;
+const int MOD = 1e9+7;
+bool CASE = false;
 void solve (){
-    ll x,y;
-    cin >> x >> y;
-    if(x < y) swap(x,y);
-    if(x == y) cout << -1 << "\n";
-    else {
-        for(int i = 0; i <= 60; i++){
-            if(1LL<<i >= x){
-                cout << (1LL<<i)-x << "\n";
-                return;
-            }
-        }
+    double n,k;
+    cin >> n >> k;
+    double exp = 0;
+    for(double i = 1; i <= k; i++){
+        exp += 1.0 * i * (pow(i/k,n) - pow((i-1)/k,n)); 
     }
-    
+    cout << setprecision(6) << fixed;
+    cout << exp;
 }
 int main(){   
     ios_base::sync_with_stdio(false);cin.tie(0);

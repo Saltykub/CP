@@ -8,19 +8,17 @@ using namespace std;
 const int N = 2e5+10;
 bool CASE = true;
 void solve (){
-    ll x,y;
-    cin >> x >> y;
-    if(x < y) swap(x,y);
-    if(x == y) cout << -1 << "\n";
-    else {
-        for(int i = 0; i <= 60; i++){
-            if(1LL<<i >= x){
-                cout << (1LL<<i)-x << "\n";
-                return;
-            }
-        }
+    int n;
+    string s;
+    cin >> n >> s;
+    map<pii,int> mp;
+    int d = 0, k = 0;
+    for(int i = 0; i < n; i++){
+        if(s[i] == 'D') d++;
+        else k++;
+        cout << ++mp[{d/__gcd(d,k),k/__gcd(d,k)}] << " ";
     }
-    
+    cout << "\n";
 }
 int main(){   
     ios_base::sync_with_stdio(false);cin.tie(0);
