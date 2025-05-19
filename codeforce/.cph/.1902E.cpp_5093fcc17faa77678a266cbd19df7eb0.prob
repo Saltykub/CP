@@ -1,1 +1,0 @@
-{"name":"Local: 1902E","url":"c:\\Posn com\\codeforce\\1902E.cpp","tests":[{"id":1701663743773,"input":"3\naba\nab\nba","output":"20"},{"id":1701663863712,"input":"5\nabab\nbabx\nxab\nxba\nbab","output":"126"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Posn com\\codeforce\\1902E.cpp","group":"local","local":true}

@@ -1,1 +1,0 @@
-{"name":"Local: A","url":"c:\\Posn com\\codeforce\\A.cpp","tests":[{"id":1693492372737,"input":"4\n123456789\n987654321\n243567918\n576318429","output":"167\n53\n3571\n57638429"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Posn com\\codeforce\\A.cpp","group":"local","local":true}

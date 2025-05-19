@@ -1,1 +1,0 @@
-{"name":"Local: 1879A","url":"c:\\Posn com\\codeforce\\1879A.cpp","tests":[{"id":1695566414161,"input":"3\n4\n7 4\n9 3\n4 6\n2 2\n2\n4 6\n100 100\n2\n1337 3\n1337 3","output":"5\n-1\n-1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Posn com\\codeforce\\1879A.cpp","group":"local","local":true}

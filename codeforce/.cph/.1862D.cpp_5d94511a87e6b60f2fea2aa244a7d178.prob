@@ -1,1 +1,0 @@
-{"name":"Local: 1862D","url":"c:\\Posn com\\codeforce\\1862D.cpp","tests":[{"id":1692888316249,"input":"5\n1\n3\n6\n179\n1000000000000000000","output":"2\n3\n4\n27\n2648956421"},{"id":1692888610656,"input":"1\n1","output":"2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Posn com\\codeforce\\1862D.cpp","group":"local","local":true}

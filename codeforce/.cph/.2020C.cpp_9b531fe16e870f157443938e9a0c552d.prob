@@ -1,1 +1,0 @@
-{"name":"Local: 2020C","url":"c:\\Posn com\\codeforce\\2020C.cpp","tests":[{"id":1727627296404,"input":"3\n4 0 5\n2 2 2\n10 2 14\n","output":""},{"id":1727673345737,"input":"1\n1 1 0","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Posn com\\codeforce\\2020C.cpp","group":"local","local":true}

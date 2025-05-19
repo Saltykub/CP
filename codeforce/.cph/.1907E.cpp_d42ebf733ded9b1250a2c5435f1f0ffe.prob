@@ -1,1 +1,0 @@
-{"name":"Local: 1907E","url":"c:\\Posn com\\codeforce\\1907E.cpp","tests":[{"id":1701845252869,"input":"12\n11\n0\n1\n2\n3\n4\n5\n3141\n999\n2718\n9999999\n10000000","output":"9\n1\n3\n6\n10\n15\n21\n1350\n166375\n29160\n1522435234375\n3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Posn com\\codeforce\\1907E.cpp","group":"local","local":true}

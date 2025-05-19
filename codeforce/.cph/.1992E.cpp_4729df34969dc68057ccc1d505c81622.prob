@@ -1,1 +1,0 @@
-{"name":"Local: 1992E","url":"c:\\Posn com\\codeforce\\1992E.cpp","tests":[{"id":1721013503960,"input":"3\n2\n3\n10\n","output":"3\n20 18 \n219 216 \n2218 2214 \n1\n165 162 \n1\n1262 2519 "},{"id":1721014788750,"input":"1\n1","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Posn com\\codeforce\\1992E.cpp","group":"local","local":true}

@@ -1,1 +1,0 @@
-{"name":"Local: 1974G","url":"c:\\Posn com\\codeforce\\1974G.cpp","tests":[{"id":1717488512362,"input":"6\n3 3\n2 2 2\n6 5\n2 2 8 2 6 8\n6 4\n4 10 3 8 6 10\n2 1\n1 1\n4 1\n4 1 3 1\n4 2\n1 3 4 3","output":"2\n4\n3\n1\n2\n1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Posn com\\codeforce\\1974G.cpp","group":"local","local":true}
