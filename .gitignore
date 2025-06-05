@@ -34,6 +34,6 @@
 # ignore all .cph folders
 TOI/
 oj/
-.cph/
-.vscode/
+**/.cph/
+**/.vscode/
 *.bin

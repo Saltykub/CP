@@ -78,23 +78,6 @@ int main(){
     ios_base::sync_with_stdio(false);cin.tie(0);
     int t = 1;
     if(CASE) cin >> t;
-    // if(t == 10000){
-    //     for(int i = 1; i <= 10000; i++){
-    //         ll n,m,l;
-    //         cin >> n >> m >> l;
-    //         vector<int> v(l);
-    //         for(int i = 0; i < l ;i++) cin >> v[i];
-    //         vector<pii> vv(m);
-    //         for(int i = 0; i < m; i++) cin >> vv[i].st >> vv[i].nd;
-    //         if(i == 75){
-    //             cout << n << " " << m << " " << l << endl;
-    //              for(int i = 0; i < l ;i++) cout << v[i] << " ";
-    //              cout << "\n";
-    //              for(int i = 0; i < m; i++) cout << vv[i].st << " " << vv[i].nd << "\n";
- 
-    //         }
-    //     }
-    // }
     while(t--){   
         solve();
     } 
