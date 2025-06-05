@@ -1,2 +1,2 @@
 # CP
-My competitive programming diary.
+My competitive programming code.
