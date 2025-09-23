@@ -6,26 +6,20 @@
 #define pb push_back
 using namespace std;
 const int N = 2e5+10;
-bool CASE = true;
+bool CASE = false;
 void solve (){
-    ll n;
+    int n;
     cin >> n;
     string s;
     cin >> s;
-    vector<ll> pref(n+1,0);
-    for(int i = 0; i < n; i++){
-        if(s[i] == '0') pref[i+1]--;
-        else pref[i+1]++;
-        pref[i+1]+=pref[i];
+    reverse(s.begin(),s.end());
+    if(s.size() < 3) cout << "No\n";
+    else if(s[0] == 'a' && s[1] == 'e' && s[2] == 't'){
+        cout << "Yes\n";
     }
-    sort(pref.begin(),pref.end());
-    ll ans = 0;
-    for(ll i = 0; i <= n; i++){
-        ans += pref[i]*(i);
-        ans -= pref[i]*(n-i);
-        ans += (i)*(i+1)/2;
+    else {
+        cout << "No\n";
     }
-    cout << ans/2 << "\n";
 }
 int main(){   
     ios_base::sync_with_stdio(false);cin.tie(0);

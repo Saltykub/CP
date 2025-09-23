@@ -8,24 +8,21 @@ using namespace std;
 const int N = 2e5+10;
 bool CASE = true;
 void solve (){
-    ll n;
-    cin >> n;
     string s;
     cin >> s;
-    vector<ll> pref(n+1,0);
-    for(int i = 0; i < n; i++){
-        if(s[i] == '0') pref[i+1]--;
-        else pref[i+1]++;
-        pref[i+1]+=pref[i];
-    }
-    sort(pref.begin(),pref.end());
+    reverse(s.begin(),s.end());
     ll ans = 0;
-    for(ll i = 0; i <= n; i++){
-        ans += pref[i]*(i);
-        ans -= pref[i]*(n-i);
-        ans += (i)*(i+1)/2;
+    bool check = false;
+    for(int i = 0; i < s.size(); i++){
+        if(!check){
+            if(s[i] == '0') ans++;
+            else check = true;
+        }
+        else {
+            if(s[i] != '0') ans++;
+        }
     }
-    cout << ans/2 << "\n";
+    cout << ans << "\n";
 }
 int main(){   
     ios_base::sync_with_stdio(false);cin.tie(0);

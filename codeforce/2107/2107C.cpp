@@ -12,23 +12,57 @@ void solve (){
     cin >> n >> k;
     string s;
     cin >> s;
-    vector<int> arr(n,0);
-    int minus = -1e9;
-    for(int i = 0; i < n; i++) cin >> arr[i];
-    vector<int> ans;
-    bool done = true;
-    ll sm = 0;
+    vector<ll> v(n);
+    for(auto &x:v) cin >> x;
+    ll mx = 0, cur = 0;
+    int j = 0;
     for(int i = 0; i < n; i++){
-        if(s[i] == 1){
-            if(arr[i] >= 0) sm += arr[i];
-            else {
-            
-            }
+        if(s[i] == '0'){
+           mx = max(mx,cur);
+           cur = 0;
         }
         else {
-
+            cur += v[i];
+            if(cur < 0) cur = 0;
+            mx = max(mx,cur);
         }
-        if(sm > k)
+    }
+    if(mx > k) cout << "No\n";
+    else {
+        bool can = false;
+        for(int i = 0; i < n; i++){
+            if(s[i] == '0') can = true;
+        }
+        if(!can && mx != k){
+            cout << "No\n";
+            return;
+        }
+        ll cur1 = 0;
+        for(int i = 0; i < n; i++){
+            if(s[i] == '0'){
+                ll mx1 = cur1;
+                for(int j = i+1; j < n; j++){
+                    if(s[j] == '0'){
+                        v[i] = k-mx1;
+                        s[i] = '1';
+                        break;
+                    }
+                    cur1 += v[j];
+                    mx1 = max(cur1,mx1);
+                }
+                if(s[i] == '0'){
+                    v[i] = k-mx1;
+                    s[i] = '1';
+                }
+                break;
+            }
+            cur1 += v[i];
+            if(cur1 < 0) cur1 = 0;
+        }
+        for(int i = 0; i < n;i++) if(s[i] == '0') v[i] = -1e18;
+        cout << "Yes\n";
+        for(auto u:v) cout << u << " ";
+        cout << "\n";
     }
 }
 int main(){   

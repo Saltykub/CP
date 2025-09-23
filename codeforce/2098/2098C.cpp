@@ -11,27 +11,37 @@ void solve (){
     int n;
     cin >> n;
     vector<int> v(n);
-    map<int,int> cnt;
-    for(auto &x:v) cin >> x,cnt[x]++;
+    for(auto &u:v) cin >> u;
+    sort(v.begin(),v.end());
     vector<pii> cal;
-    for(auto [val,c]:cnt){
-        cal.pb({val,c});
-    }
-    sort(cal.begin(),cal.end());
-    bool start = false;
-    for(int i = 0; i < cal.size(); i++){
-        auto [val,c] = cal[i];
-        if(c >= 4) {
+    int cnt = 1;
+    for(int i = 1; i < n; i++){
+        if(v[i] == v[i-1]) cnt++;
+        else {
+            cal.pb({v[i-1],cnt});
+            cnt = 1;
+        }
+        if(cnt >= 4){
             cout << "Yes\n";
             return;
         }
-        else if(c >= 2 && !start){
-            start = true;
-        }
-        else if(c >= 2 )
-
     }
-
+    cal.pb({v[n-1],cnt});
+    bool start = false;
+    if(cal[0].nd >= 2) start = true;
+    for(int i = 1; i < cal.size(); i++){
+        if(cal[i].nd >= 2){
+            if(cal[i].st-1 == cal[i-1].st && start){
+                cout << "Yes\n";
+                return;
+            }
+            start = true;
+        } 
+        else if(cal[i].st-1 != cal[i-1].st){
+            start = false;
+        }
+    }
+    cout << "No\n";
 }
 int main(){   
     ios_base::sync_with_stdio(false);cin.tie(0);
