@@ -9,22 +9,26 @@
 #define vll vector<ll>
 using namespace std;
 const int N = 2e5+10;
-bool CASE = true;
-vll adj[N];
+bool CASE = false;
 void solve (){
-    int n;
-    cin >> n;
-    for(int i = 0; i < n-1; i++){
-        int u,v;
-        cin >> u >> v;
-        adj[u].pb(v);
-        adj[v].pb(u);
+    int l = 1, r = 1e9;
+    auto ask = [&](int x){
+        cout << "? " << x << endl;
+        string ret;
+        cin >> ret;
+        if(ret == "NO") return 0;
+        else return 1;
+    };
+    while(l<r){
+        int mid = (l+r)/2;
+        if(ask(mid)){
+            l = mid+1;
+        }
+        else {
+            r = mid;
+        }
     }
-
-
-
-    
-    for(int i = 1; i <= n; i++) adj[i].clear();
+    cout << "! " << l << endl;
 }
 int main(){   
     ios_base::sync_with_stdio(false);cin.tie(0);

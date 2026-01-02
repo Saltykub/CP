@@ -10,21 +10,21 @@
 using namespace std;
 const int N = 2e5+10;
 bool CASE = true;
-vll adj[N];
 void solve (){
     int n;
     cin >> n;
-    for(int i = 0; i < n-1; i++){
-        int u,v;
-        cin >> u >> v;
-        adj[u].pb(v);
-        adj[v].pb(u);
+    n--;
+    char p = '+', m = '-';
+    if(n < 0) {
+        n = -n;
+        p = '-';
+        m = '+';
     }
-
-
-
-    
-    for(int i = 1; i <= n; i++) adj[i].clear();
+    string ans = "1";
+    for(int i = 2; i <= n; i++){
+       
+       }
+    }
 }
 int main(){   
     ios_base::sync_with_stdio(false);cin.tie(0);

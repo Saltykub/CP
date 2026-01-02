@@ -9,22 +9,27 @@
 #define vll vector<ll>
 using namespace std;
 const int N = 2e5+10;
-bool CASE = true;
-vll adj[N];
+bool CASE = false;
 void solve (){
     int n;
-    cin >> n;
-    for(int i = 0; i < n-1; i++){
-        int u,v;
-        cin >> u >> v;
-        adj[u].pb(v);
-        adj[v].pb(u);
+    string s;
+    cin >> n >> s;
+    int idx = 1;
+    long long mn1 = 0, mn2 = 0;
+    for(int i = 0; i < 2*n; i++){
+        if(s[i] == 'B'){
+            mn1 += abs(i-idx);
+            idx += 2;
+        }
     }
-
-
-
-    
-    for(int i = 1; i <= n; i++) adj[i].clear();
+    idx = 1;
+    for(int i = 0; i < 2*n; i++){
+        if(s[i] == 'A'){
+            mn2 += abs(i-idx);
+            idx += 2;
+        }
+    }
+    cout << min(mn1,mn2);
 }
 int main(){   
     ios_base::sync_with_stdio(false);cin.tie(0);

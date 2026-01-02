@@ -10,21 +10,20 @@
 using namespace std;
 const int N = 2e5+10;
 bool CASE = true;
-vll adj[N];
 void solve (){
-    int n;
-    cin >> n;
-    for(int i = 0; i < n-1; i++){
-        int u,v;
-        cin >> u >> v;
-        adj[u].pb(v);
-        adj[v].pb(u);
+    ll n,l,r;
+    cin >> n >> l >> r;
+    int prev = 0;
+    for(int i = 1; i <= n; i++){
+        if(i == r){
+            cout << (prev^(l-1)) << " ";
+            prev = l-1;
+            continue;
+        }
+        cout << (i^prev) << " ";
+        prev = i;
     }
-
-
-
-    
-    for(int i = 1; i <= n; i++) adj[i].clear();
+    cout << "\n";
 }
 int main(){   
     ios_base::sync_with_stdio(false);cin.tie(0);

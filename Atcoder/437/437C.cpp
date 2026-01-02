@@ -10,21 +10,23 @@
 using namespace std;
 const int N = 2e5+10;
 bool CASE = true;
-vll adj[N];
 void solve (){
     int n;
     cin >> n;
-    for(int i = 0; i < n-1; i++){
-        int u,v;
-        cin >> u >> v;
-        adj[u].pb(v);
-        adj[v].pb(u);
+    vector<pii> v(n);
+    for(auto &[w,p]:v) cin >> w >> p;
+    sort(all(v),[&](pii a, pii b){
+        return (a.st+a.nd) < (b.st+b.nd);
+    });
+    ll sm = 0, cur = 0;
+    for(auto [w,p]:v) sm += p;
+    for(int i = 0; i < n; i++){
+        cur += v[i].st + v[i].nd;
+        if(cur > sm){
+            cout << i << "\n";
+            return;
+        }
     }
-
-
-
-    
-    for(int i = 1; i <= n; i++) adj[i].clear();
 }
 int main(){   
     ios_base::sync_with_stdio(false);cin.tie(0);

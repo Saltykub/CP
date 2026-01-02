@@ -4,27 +4,21 @@
 #define pii pair<ll,ll>
 #define nd second
 #define pb push_back
-#define all(x) (x).begin(), (x).end()
-#define sz(x) ((int)(x).size())
-#define vll vector<ll>
 using namespace std;
 const int N = 2e5+10;
 bool CASE = true;
-vll adj[N];
 void solve (){
-    int n;
-    cin >> n;
-    for(int i = 0; i < n-1; i++){
-        int u,v;
-        cin >> u >> v;
-        adj[u].pb(v);
-        adj[v].pb(u);
+    int n,m;
+    cin >> n >> m;
+    vector<int> v(m);
+    for(auto &x:v) cin >> x;
+    for(int i = 1; i < m; i++){
+        if(v[i] != v[i-1]+1){
+            cout << 1 << "\n";
+            return;
+        }
     }
-
-
-
-    
-    for(int i = 1; i <= n; i++) adj[i].clear();
+    cout << n-v[m-1]+1 << "\n";
 }
 int main(){   
     ios_base::sync_with_stdio(false);cin.tie(0);
