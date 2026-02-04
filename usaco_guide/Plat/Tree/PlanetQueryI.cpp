@@ -11,36 +11,30 @@ using namespace std;
 const int N = 2e5+10;
 bool CASE = false;
 int p[N][35];
-ll val[N][35];
-ll jmp(int i, int k){
+int jmp(int i, int k){
     int ret = i;
-    ll sm = 0;
     for(int i = 0; i < 30; i++){
         if((1LL<<i)&k){
-            sm += val[ret][i];
             ret = p[ret][i];
         }
     }
-    return sm;
+    return ret;
 }
 void solve (){
     int n,q;
     cin >> n >> q;
     for(int i = 1; i <= n; i++){
         cin >> p[i][0];
-        val[i][0] = i;
     }
     // pre-process 
     for(int i = 1; i < 30; i++){
         for(int j = 1; j <= n; j++){
             p[j][i] = p[p[j][i-1]][i-1];
-            val[j][i] = val[j][i-1] + val[p[j][i-1]][i-1];
         }
     }
-    //cout << jmp(4,1);
     while(q--){
         int i,k;
-        cin >> k >> i;
+        cin >> i >> k;
         cout << jmp(i,k) << "\n";
     }
 
